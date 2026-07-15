@@ -1,0 +1,26 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnSave": true,
+    "editor.detectIndentation": false,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/production-server": true,
+      "**/lambda/src/api": true,
+      "**/.next": true,
+      "**/.coverage": true
+    },
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "always"
+    },
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "eslint.workingDirectories": [
+      { "directory": "./clientapp", "changeProcessCWD": true },
+    ],
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    }
+}
