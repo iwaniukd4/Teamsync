@@ -2,8 +2,15 @@ import Document, { Head, Html, Main, NextScript } from 'next/document';
 import React from 'react';
 
 class MyDocument extends Document {
+  public static getInitialProps = async (ctx) => {
+    const initialProps = await Document.getInitialProps(ctx);
+
+    return {
+      ...initialProps,
+    };
+  };
   public render() {
-    console.log(process.env.NEXT_PUBLIC_URL_APP);
+    //console.log('rendered on the server');
 
     return (
       <Html lang="en">
